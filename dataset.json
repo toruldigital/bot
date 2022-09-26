@@ -1,0 +1,201 @@
+{"intents": [
+		{"tag": "greeting",
+		"patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+		"responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, tell me how I can help."]
+		},
+
+		{"tag": "name",
+		"patterns": ["What is your name?", "What can I call you?"],
+		"responses": ["You can call me TORUL.", "My name is TORUL."]
+		},
+
+		{"tag": "TORUL",
+		"patterns": ["TORUL", "TORUL stand for?"],
+		"responses": ["TORUL stands for Transformation, Organisation, Resolution, and Upholding of Labor law."]
+		},
+
+		{"tag": "goodbye",
+		"patterns": ["Bye", "See you later", "Goodbye"],
+		"responses": ["See you later, thanks for visiting", "Have a nice day", "Bye, Come back again soon."]
+		},
+
+		{"tag": "thanks",
+		"patterns": ["Thanks", "Thank you", "That's helpful", "Appreciate it!"],
+		"responses": ["Happy to help", "Any time", "My Pleasure", "You're welcome"]
+		}, 
+
+		{"tag": "employmentLawDef",
+		"patterns": ["What is employment law?", "definition of employment law?", "What are the sources of employment law in Mauritius?", "What are the laws that regulate employment in Mauritius?", "What are the laws that govern employment?", "What laws should I refer to for any employment issues?"],
+		"responses": ["There are three main sources of employment law in Mauritius: <ol><li>Statutory provisions (Employment Relations Act and Employment Rights Act) in a contract of employment</li><li>Express terms in a contract of employment</li><li>Terms derived from applicable collective agreements, also known as implied terms in a contract of employment.</li><ol>"],
+		"context_set": "employmentLawDefinition"
+		},
+
+		{"tag": "employmentContract",
+		"patterns": ["What is a contract of employment?", "What does a contract of employment mean?", "What is the definition of a contract of employment?", "What is the meaning of a contract of employment?"],
+		"responses": ["<p>A contract of employment is an agreement in terms of which the employee/worker agrees to make his personal services available to the employer under the latter's supervision and authority in return for remuneration.</p><p>A contract of employment may also be a contract of service or of apprenticeship and may be oral, written, implied or express.</p>"],
+		"context_set": "employmentContractDefinition"
+		},
+
+		{"tag": "expressTerms",
+		"patterns": ["What are express terms?", "What does express terms mean?", "What are expressed terms in a contract of employment?", "What is the definition of express terms?"],
+		"responses": ["Express terms are the content of a contract of employment and give rise to obligations. The express terms may be set out in writing, agreed orally, or established by conduct but section 8(1) of the ERA 2008 requires the employer to provide the employee/worker with a 'written statement of particulars of employment'."],
+		"context_set": "expressTermsDefinition"
+		},
+
+		{"tag": "statementOfParticulars",
+		"patterns": ["What is a written statement of particulars of employment?", "What are the particulars of a work agreement?", "What is meant by a written statement of particulars of employment?"],
+		"responses": ["<p>A statement of particulars of the employment is the written content of a contract of employment which includes:</p><ul><li>Name of the Employer</li><li>National Pension Number</li><li>Business Registration Number/National Identity Card of the employer</li><li>Address of the employer</li><li>Nature of Activity</li><li>Name of worker</li><li>Sex of worker</li><li>National Identity Card Number/Passport Number</li><li>Date of birth of worker</li><li>Address of worker</li><li>Date of commencement of agreement</li><li>Place of work</li><li>Grade, class, or category of employment</li><li>Rate and particulars of renumeration</li><li>Intervals at which renumeration has to be paid</li><li>Normal hours of work</li></ul><p>The content of the written statement may be embodied in the form of a contract of employment or letter of engagement but must be set out in a single document. The written statement of particulars of employment must be provided to the employer/worker within 14 days of the completion of 30 consecutive working days’ service.</p>"],
+		"context_set": "statementOfParticularsDefinition"
+		},
+
+		{"tag": "statementOfParticularsSending",
+		"patterns": ["Shall the employer give a written statement of particulars of employment to the worker?", "Is a written statement of particulars of employment needed?", "Do I have to give a statement of partiulars of employment to my employee or worker?", "Does my employer need to give me a written statement of particulars of employment?", "Is a written statement of particulars of employment needed if I am an employee?", "Am I required to give my worker a written statement of particulars of employment?"],
+		"responses": ["<b>Section 8(1)</b> of the ERA 2008 requires the employer to provide every employee/worker with a written statement of particulars of employment within 14 days of the completion of 30 consecutive working days’ service."],
+		"context_set": "sendingStatementOfParticulars"
+		},
+
+		{"tag": "Employer",
+		"patterns": ["Who is an employer?", "Am I an employer?", "What is considered an employer?", "Who can be deemed an employer?", "Can I be considered to be an employer?"],
+		"responses": ["<p>An employer is a person who employs a worker and is responsible for the payment of remuneration to the worker. He also gives instructions as to the way the work to be performed, monitors its completion and checks on the outcome.</p><p>Employer also includes the following:<ul><li>A job contractor</li><li>owner of either a sugar factory or land under sugarcane cultivation of an extent exceeding 10.5522 hectares (25 hectares) in aggregate</li><li>A company</li><li>An enterprise</li><li>The State</li><li>A statutory corporation</li><li>a body of persons employing a worker or a group of employers or trade union of employers</li></ul></p>"],
+		"context_set": "employerDefinition"
+		},
+
+		{"tag": "Employee",
+		"patterns": ["Who is an employee?", "Who is a worker?", "Am I an employee?", "Am I a worker?", "What is considered an employee?", "What is considered a worker?", "Who can be deemed an employee?", "Who can be deemed a worker?", "Can I be considered to be an employee or worker?"],
+		"responses": ["<p>A worker is a person who has entered into or works under an agreement or a contract of apprenticeship with an employer, whether by way of casual work, manual work, clerical work or otherwise and however remunerated.</p><p>A person is not a worker under a contract of apprenticeship regulated under the Mauritius Institute of Training and Development Act 12 of 2009.</p><p>A worker is also subordinate to the control of his employer who gives instructions as to the way the work has to be performed, monitors its completion and also checks on the outcome.</p><p>An employee also include a part-time worker, a former worker where appropriate and a share worker.</p>"],
+		"context_set": "employeeDefinition"
+		},
+
+		{"tag": "contractAgreement",
+		"patterns": ["How can the employee and the employer enter into an agreement or contract?", "How is an agreement between two parties formed?", "When is there an agreement of a contract of employment?", "How do I enter into a contract to work?"],
+		"responses": ["Parties are deemed to have entered into a contract and commencement of work when: <ul><li>the employer or his agent informs the worker of the nature of the task he is required to perform, and the rate at which he will be remunerated for that work</li><li>the worker reports at a place of work or is conveyed there by his employer or his employer’s agent, and is found fit and willing to perform the work.</li></ul>"],
+		"context_set": "contractAgreementDefinition"
+		},
+
+		{"tag": "lengthOfContract",
+		"patterns": ["How long can an agreement to work or contract of employment be?", "How long should my contract of employment be?", "What is duration of most employment agreements?", "What is the length of my contract?"],
+		"responses": ["The agreement may be for an indeterminate duration or for a specified period of time. If the agreement is for a specified period of time or a determinate duration, it must be in writing."],
+		"context_set": "contractLength"
+		},
+
+		{"tag": "shortTermContract",
+		"patterns": ["How do I create a contract for a short period of time?", "Can an agreement be formed limited duration of time?", "Can contracts be formed for a determinate period of time?", "Can I work for a short period of time?"],
+		"responses": ["An employer may enter into an agreement with a worker for a specified period of time:<ul><li>in respect of a specified piece of work</li><li>in replacement of another worker who is on approved leave or suspended from work</li><li>in respect of work and activity which are of temporary, seasonal or short-term nature</li><li>for the purposes of providing training to the workforce</li><li>for a specific training contract</li><li>in accordance with a specific scheme set up by the Government or a statutory corporation</li></ul>"],
+		"context_set": "shortTermContractInfo"
+		},
+
+		{"tag": "renumerationExampleNoPayment",
+		"patterns": ["My employer has not paid me for 2 months of work, what should I do?", "Boss has not renumerated me for 2 months of work, what can i do?", "My boss has not paid me for 2 months, how do i get paid?"],
+		"responses": ["Every employer shall pay remuneration to a worker at monthly intervals, unless the parties agree to payment at shorter intervals such as the piece rate system, paid weekly or on an hourly basis, depending on the agreement and consensus between the employer and employee as negotiated. Payment must be made not later than last working day of the pay period. <p>Is your employment contract a monthly, weekly, or daily contract?</p>"],
+		"context_set": "renumerationExample2monthsNoPayment"
+		},
+
+		{"tag": "renumerationExampleNoPaymentWeeklyContract", 
+		"patterns": ["My contract is weekly", "weekly", "The contract is by the week"],
+		"responses": ["Your employer should have renumerated you by now and you should take this issue to the labour office.<p>Any worker may make a complaint at the Labour Office against his employer or any agent of the employer, in respect to any matter arising out of his employment. Where the complaint has been received by the Permanent Secretary and he is satisfied that the any provision of the law relating to the employment of the complainant has not been complied with, he may issue a notice enforcing the compliance. Within 7 days of the receipt of the notice, the employer may challenge such notice before the Industrial Court, which may after the hearing, revoke or affirm the notice. Where an employer does not challenge the notice or the Court affirms the notice, the employer shall comply with the requirements thereof within 14 days of the date of the receipt of the notice or the date of the decision of the Court.</p>"],
+		"context_filter": "renumerationExample2monthsNoPayment"
+		},
+
+		{"tag": "renumerationExampleNoPaymentMonthlyContract", 
+		"patterns": ["My contract is monthly", "monthly", "The contract is by the month"],
+		"responses": ["Your employer should have renumerated you by now and you should take this issue to the labour office.<p>Any worker may make a complaint at the Labour Office against his employer or any agent of the employer, in respect to any matter arising out of his employment. Where the complaint has been received by the Permanent Secretary and he is satisfied that the any provision of the law relating to the employment of the complainant has not been complied with, he may issue a notice enforcing the compliance. Within 7 days of the receipt of the notice, the employer may challenge such notice before the Industrial Court, which may after the hearing, revoke or affirm the notice. Where an employer does not challenge the notice or the Court affirms the notice, the employer shall comply with the requirements thereof within 14 days of the date of the receipt of the notice or the date of the decision of the Court.</p>"],
+		"context_filter": "renumerationExample2monthsNoPayment"
+		},
+
+		{"tag": "renumerationExampleNoPaymentDailyContract", 
+		"patterns": ["My contract is daily", "daily", "The contract is by the day"],
+		"responses": ["Your employer should have renumerated you by now and you should take this issue to the labour office.<p>Any worker may make a complaint at the Labour Office against his employer or any agent of the employer, in respect to any matter arising out of his employment. Where the complaint has been received by the Permanent Secretary and he is satisfied that the any provision of the law relating to the employment of the complainant has not been complied with, he may issue a notice enforcing the compliance. Within 7 days of the receipt of the notice, the employer may challenge such notice before the Industrial Court, which may after the hearing, revoke or affirm the notice. Where an employer does not challenge the notice or the Court affirms the notice, the employer shall comply with the requirements thereof within 14 days of the date of the receipt of the notice or the date of the decision of the Court.</p>"],
+		"context_filter": "renumerationExample2monthsNoPayment"
+		},
+
+		{"tag": "renumerationExampleNoPaymentNoLabourOffice",
+		"patterns": ["I would prefer not to go to the labour office?", "Is there any other way?", "Are there other ways to get this solved?"],
+		"responses": ["Your Supervising Officer may also provide a conciliation service to conciliate the parties to a dispute not yet reported to the President of the Commission. If no agreement is reached the Supervising Officer may advise the parties to refer for voluntary arbitration to the Tribunal or to an arbitrator appointed by them. After meaningful negotiations or after a stage of deadlock has been reached, the dispute may be reported to the President of the Commission for mediation and making recommendations. If the President of the Commission rejects the application of the dispute appeal can be made to the Tribunal within 21 days. The Tribunal may make awards which are binding on all parties."],
+		"context_filter": "renumerationExample2monthsNoPayment"
+		},
+
+		{"tag": "terminationContractDefinition",
+		"patterns": ["What is termination of services to work?", "What is termination of a contract of employment?", "What is termination of an agreement to work?"],
+		"responses": ["Termination of a contract of employment is when a party of that contract (the employer or the employee) or both parties of that contract (through mutual agreement) end(s) an agreement to work between the parties (the employer and the employee)."],
+		"context_set": "contractTermination"
+		},
+
+		{"tag":"terminationContractHowEmployer",
+		"patterns": ["How can a contract of employment can be terminated?", "How can an agreement to work be terminated?", "How can a service be terminated?", "How can an employer terminate a contract of employment?", "How can a contract of employment be terminated by an employer?"],
+		"responses": ["A contract of employment can be terminated by:<ul><li>Mutual agreement or mutual consent between the employer and the employee/worker</li><li>Dismissal</li><li>Expiry of fixed-terms contracts</li><li>Frustration of the contract, that is, an intervening factor making the performance of the contract impossible, such as imprisonment of the worker</li><li>The death of the employer or employee</li><li>Dissolution of the enterprise</li><li>Expiry of a notice of termination</li><li>An employer Ill-treating the worker</li><li>The employer failing to pay remuneration due under the agreement</li></ul><p>An agreement shall not be broken by a worker where he absents himself from work for more than 2 consecutive working days without good and sufficient cause for a first time unless the employer proves that the worker has, after having been given written notice:</p><ol><li>by post with advice of delivery or</li><li>by delivery at the residence of the worker,</li><ol><p>requiring him to resume his employment, failed to do so within a time specified in the notice which shall not be less than 24 hours from receipt of the notice.</p>"],
+		"context_set": "contractTerminationHowEmployer"
+		},
+
+		{"tag": "terminationContractHowEmployee",
+		"patterns": ["How can an employee terminate a contract of employment to work?", "How can a worker terminate a contract of agreement for his or her services?", "How can a contract of employment to work be terminated by a worker?", "How can an agreement to work be terminated by an employee?", "I have resigned, what is the process?"],
+		"responses": ["The employee/worker can terminate his or her services or contract of employment by:<ul><li>Mutual agreement between him or her and his or her employer</li><li>Resigning from his or service or job</li><li>His or her death</li><li>Not performing the contract</li></ul><p>An agreement shall not be broken by a worker where he absents himself from work for more than 2 consecutive working days without good and sufficient cause for a first time unless the employer proves that the worker has, after having been given written notice:</p><ol><li>by post with advice of delivery or</li><li>by delivery at the residence of the worker,</li><ol><p>requiring him to resume his employment, failed to do so within a time specified in the notice which shall not be less than 24 hours from receipt of the notice.</p>"],
+		"context_set": "contractTerminationHowEmployee"
+		},
+
+		{"tag": "terminationContractProcedure",
+		"patterns": ["What are the procedures to be followed by the employer while terminating a contract of employment", "What are the procedures to be followed by the employer when terminating the services of an employee?", "What are the obligations of the employer while terminating the services of an employee or a worker?", "What are the rights of the employee when the employer is terminating his or her contract of employment", "What are the rights of the worker while the employer is terminating his or her services?"],
+		"responses":["The employer shall:<ul><li>Notify the worker of the termination of his employment</li><li>State the reason of such termination</li><li>Pay to the worker the amount of remuneration the worker would have earned, had he remained in employment during the period of notice, if notice is not served</li><li>Give written notice of that fact to the Permanent Secretary, on the date of the termination of the employment</li><li>Pay the worker on termination if he has not taken any annual leave</li><ul><p>Notice may be verbal or written and may be given at any reasonable time.</p>"],
+		"context_set": "contractTerminationProcedure"
+		},
+
+		{"tag": "lengthOfNotice",
+		"patterns": ["How many days of notice shall an employee have for termination of a contract of employment?", "How much time should my employer give me for termination of my contract of employment?", "How many days of notice for termination of a contract of employment must be served?", "how much time can my employer give me before I get fired?", "How many days of notice should my employer give me?", "What is the length of notice?"],
+		"responses": ["<p>Permanent or full-time worker who worked for more than 12 months - <b>30 days of termination notice.</b></p><p>Worker who worked less than 12 months having a monthly contract or monthly salary - <b>30 days of termination notice.</b></p><p>Worker with a weekly contract or weekly salary - <b>1 week of termination notice.</b></p><p>Worker with a daily contract or daily salary - <b>1 day of termination notice.</b></p><p>Dismissal due to misconduct and poor performance - <b>7 days of termination notice after the employer has answered to the charge.</b></p><p>The law will read into the contract of employment that is terminable upon reasonable notice. It will be a matter of litigation to quantify what is reasonable depending on the position of the employee within the firm, his/her professional standing and his/her salary.</p><p>Some dismissal can be done without notice, particularly in cases of gross or serious misconduct but dismissal without notice might not be justifiable in all cases and can be procedurally unfair.</p>"],
+		"context_set": "noticeLength"
+		},
+
+		{"tag": "reasonsForDismissal",
+		"patterns": ["What can be the reasons for dismissal?", "What can be the reasons for an employer to dismiss a worker?", "What are the reasons for my termination?", "Why have I been fired?"],
+		"responses": ["The main reasons for dismissal are misconduct, poor performance or incapacity and redundancy or reduction of workforce."],
+		"context_set": "terminationReason"
+		},
+
+		{"tag": "employeeDismissalRights",
+		"patterns": ["What are the worker's rights in relation to dismissal", "What are my rights when I get fired?", "What protections does an employee have in relation to dismissal?"],
+		"responses": ["A worker has the right not to be unfairly dismissed for:<ul><li>Discriminatory practices,</li><li>Absence from work during maternity leave,</li><li>Absence due to injury or sickness dully notified,</li><li>Being a member of a trade union or participating in trade union activities with the consent of the employer,</li><li>Filing a complaint in good faith against the employer.</li></ul>"],
+		"context_set": "dismissalemployeerights"
+		},
+
+		{"tag": "misconduct",
+		"patterns": ["What qualifies as misconduct?", "What is considered misconduct", "How did I misconduct?"],
+		"responses": ["Misconduct includes the following:<ul><li>Breach of trust and confidentiality</li><li>Dishonest behaviors</li><li>Unauthorised absence from duty</li><li>Absence and abandonment of work</li><li>Lateness</li><li>Violence at work</li><li>Other misconduct recognised by case or common law or case law is defaming the enterprise</li></ul>"],
+		"context_set": "misconduct"
+		},
+
+		{"tag": "misconductBreachOfTrust",
+		"patterns": ["What is a Breach of Trust?", "What could be confidential for a company?"],
+		"responses": ["Breach of Trust and confidentiality includes the following: <ul><li>Fraud</li><li>Theft</li><li>Unauthorised posession of employer's property</li><li>Defamatory and injurious allegations agasint the company</li><li>Disclosing confidential information</li></ul>"],
+		"context_filter": "misconduct"
+		},
+
+		{"tag": "misconductDishonestBehaviours",
+		"patterns": ["What is a Dishonest Behaviour?", "How can Dishonest Behaviour be defined?"],
+		"responses": ["Dishonest behaviours include fraud, theft and unauthorised possession of employer’s property, causing severe damage to employer’s business or property, absence on the strength of spurious medical certificate, insubordination and disobedience of lawful and reasonable orders, negligence and deliberate flouting of regulations."],
+		"context_filter": "misconduct"
+		},
+
+		{"tag": "misconductLateness",
+		"patterns": ["What do you mean by Lateness?", "What is Lateness", "What does Lateness include?"],
+		"responses": ["Lateness includes attending the duty late and falsely recording the time of arrival."],
+		"context_filter": "misconduct"
+		},
+
+		{"tag": "misconductViolence",
+		"patterns": ["What do you mean by Violence?", "What is Violence", "What does Violence include?", "How can Violence at work be defined?"],		"responses": ["Lateness includes attending the duty late and falsely recording the time of arrival."],
+		"responses": ["Violence at work includes use of abusive language, harassment, sexually or otherwise; assault; verbally abuse, swear at or insult; express the intention to cause harm to; bully or use threatening behaviour towards; use aggressive gesture indicating intimidation, contempt or disdain towards; by words or act, hinder."],
+		"context_filter": "misconduct"
+		},
+
+		{"tag": "arrested",
+		"patterns": ["I have been arrested and detained for days and my employer is refusing to take me back to work saying I have left the company on my own accord. Can he do that?", "Can my employer refuse to take me back to work saying I have left the company on my own accord after I have been arrested and detained for days?", "I have been arrested and not allowed back to work. Is this allowed?"],
+		"responses": ["If there is an interruption in the continuity of the performance of your contract for an unreasonably long time, your employer has the option to terminate your contract. A contract of employment requires continuity of performance on an individual basis."],
+		"context_set": "arrestedTerminated"
+		},
+
+		{"tag": "arrestedQuery",
+		"patterns": ["What can I do?", "Is there any way around this?", "How do I get this solved?"],
+		"responses": ["If you have been absent for more than 2 consecutive working days, and your employer has not given you statutory written notice, there is the possibility of claiming either reinstatement or severance allowance for unfair dismissal. This reasoning is in line with section 36(5) of the Employment Rights Act 2008. It states that where you may have absented yourself from work for more than 2 consecutive working days without good and sufficient cause for the first time the employer has to show that he has given you written notice by post with advice of delivery or by delivery at your residence, requiring you to resume your employment."],
+		"context_filter": "arrestedTerminated"
+		}
+	]
+}

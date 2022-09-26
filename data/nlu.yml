@@ -1,0 +1,327 @@
+version: "3.0"
+
+nlu:
+- intent: greeting
+  examples: |
+    - Hi
+    - How are you
+    - Is anyone there?
+    - Hello
+    - Good day
+    - /start
+
+- intent: name
+  examples: |
+    - What is your name?
+    - What can I call you?
+    - who are you?
+
+- intent: TORUL
+  examples: |
+    - TORUL
+    - TORUL stand for?
+    - what is torul
+    
+- intent: goodbye
+  examples: |
+    - Bye
+    - See you later
+    - Goodbye
+
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - That's helpful
+    - Appreciate it!
+  
+- intent: affirm
+  examples: |
+    - ya
+    - yes
+    - yeah
+    - yes i have
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - na
+    - no more question
+
+- intent: toxic_language
+  examples: |
+    - fuck you
+    - fuck
+    - f u
+
+- intent: employmentLawDef
+  examples: |
+    - employment law
+    - What is employment law?
+    - definition of employment law?
+    - What are the sources of employment law in Mauritius?
+    - What are the laws that regulate employment in Mauritius?
+    - What are the laws that govern employment?
+    - What laws should I refer to for any employment issues? 
+
+- intent: employmentContract
+  examples: |
+    - What is a contract of employment?
+    - What does a contract of employment mean?
+    - What is the definition of a contract of employment?
+    - What is the meaning of a contract of employment?
+
+- intent: expressTerms
+  examples: |
+    - express terms
+    - What are express terms?
+    - What does express terms mean?
+    - What are expressed terms in a contract of employment?
+    - What is the definition of express terms?
+
+- intent: statementOfParticulars
+  examples: |
+    - written statement of particulars
+    - What is a written statement of particulars of employment?
+    - What are the particulars of a work agreement?
+    - What is meant by a written statement of particulars of employment?
+
+- intent: statementOfParticularsSending
+  examples: |
+    - Shall the employer give a written statement of particulars of employment to the worker?
+    - Is a written statement of particulars of employment needed?
+    - Do I have to give a statement of particulars of employment to my employee or worker?
+    - Does my employer need to give me a written statement of particulars of employment?
+    - Is a written statement of particulars of employment needed if I am an employee?
+    - Am I required to give my worker a written statement of particulars of employment?
+
+- intent: Employer
+  examples: |
+    - Who is an employer?
+    - Am I an employer?
+    - What is considered an employer?
+    - Who can be deemed an employer?
+    - Can I be considered to be an employer?
+
+- intent: Employee
+  examples: |
+    - Who is an employee?
+    - Who is a worker?
+    - Am I an employee?
+    - Am I a worker?
+    - What is considered an employee?
+    - What is considered a worker?
+    - Who can be deemed an employee?
+    - Who can be deemed a worker?
+    - Can I be considered to be an employee or worker?
+
+- intent: contractAgreement
+  examples: |
+    - How can the employee and the employer enter into an agreement or contract?
+    - How is an agreement between two parties formed?
+    - When is there an agreement of a contract of employment?
+    - How do I enter into a contract to work?
+
+- intent: lengthOfContract
+  examples: |
+    - How long can an agreement to work or contract of employment be?
+    - How long should my contract of employment be?
+    - What is duration of most employment agreements?
+    - What is the length of my contract?
+
+- intent: shortTermContract
+  examples: |
+    - How do I create a contract for a short period of time?
+    - Can an agreement be formed limited duration of time?
+    - Can contracts be formed for a determinate period of time?
+    - Can I work for a short period of time?
+    - can i get a short term contract?
+
+- intent: renumerationExampleNoPayment
+  examples: |
+    - My employer has not paid me for 2 months of work, what should I do?
+    - Boss has not renumerated me for 2 months of work, what can i do?
+    - My boss has not paid me for 2 months, how do i get paid?
+    - i did not get paid for 2 months, how do i get paid?
+    - i was not paid for 2 months, what should i do?
+
+- intent: renumerationExampleNoPaymentWeeklyContract
+  examples: |
+    - My contract is weekly
+    - weekly
+    - The contract is by the week
+
+- intent: renumerationExampleNoPaymentMonthlyContract
+  examples: |
+    - My contract is monthly
+    - monthly
+    - The contract is by the month
+
+- intent: renumerationExampleNoPaymentDailyContract
+  examples: |
+    - My contract is daily
+    - daily
+    - The contract is by the day
+
+- intent: renumerationExampleNoPaymentNoLabourOffice
+  examples: |
+    - I would prefer not to go to the labour office?
+    - Is there any other way?
+    - Are there other ways to get this solved? 
+
+- intent: terminationContractDefinition
+  examples: |
+    - termination of contract
+    - What is termination of services to work?
+    - What is termination of a contract of employment?
+    - What is termination of an agreement to work? 
+
+- intent: terminationContractHowEmployer
+  examples: |
+    - How can a contract of employment can be terminated?
+    - How can an agreement to work be terminated?
+    - How can a service be terminated?
+    - How can an employer terminate a contract of employment?
+    - How can a contract of employment be terminated by an employer?
+
+- intent: terminationContractHowEmployee
+  examples: |
+    - How can an employee terminate a contract of employment to work?
+    - How can a worker terminate a contract of agreement for his or her services?
+    - How can a contract of employment to work be terminated by a worker?
+    - How can an agreement to work be terminated by an employee?
+    - I have resigned, what is the process?
+
+- intent: terminationContractProcedure
+  examples: |
+    - What are the procedures to be followed by the employer while terminating a contract of employment
+    - What are the procedures to be followed by the employer when terminating the services of an employee?
+    - What are the obligations of the employer while terminating the services of an employee or a worker?
+    - What are the rights of the employee when the employer is terminating his or her contract of employment
+    - What are the rights of the worker while the employer is terminating his or her services?
+
+- intent: lengthOfNotice
+  examples: |
+    - How many days of notice shall an employee have for termination of a contract of employment?
+    - How much time should my employer give me for termination of my contract of employment?
+    - How many days of notice for termination of a contract of employment must be served?
+    - how much time can my employer give me before I get fired?
+    - How many days of notice should my employer give me?
+    - What is the length of notice?
+
+- intent: reasonsForDismissal
+  examples: |
+    - What can be the reasons for dismissal?
+    - What can be the reasons for an employer to dismiss a worker?
+    - What are the reasons for my termination?
+    - Why have I been fired?
+
+- intent: employeeDismissalRights
+  examples: |
+    - What are the worker's rights in relation to dismissal
+    - What are my rights when I get fired?
+    - What protections does an employee have in relation to dismissal?
+
+- intent: misconduct
+  examples: |
+    - What qualifies as misconduct?
+    - What is considered misconduct
+    - How did I misconduct?
+
+- intent: misconductBreachOfTrust
+  examples: |
+    - What is a Breach of Trust?
+    - What could be confidential for a company?
+
+- intent: misconductDishonestBehaviours
+  examples: |
+    - What is a Dishonest Behaviour?
+    - How can Dishonest Behaviour be defined?
+
+- intent: misconductLateness
+  examples: |
+    - What do you mean by Lateness?
+    - What is Lateness
+    - What does Lateness include?
+
+- intent: misconductViolence
+  examples: |
+    - What do you mean by Violence?
+    - What is Violence
+    - What does Violence include?
+    - How can Violence at work be defined?
+
+- intent: arrested
+  examples: |
+    - I have been arrested and detained for days and my employer is refusing to take me back to work saying I have left the company on my own accord. Can he do that?
+    - Can my employer refuse to take me back to work saying I have left the company on my own accord after I have been arrested and detained for days?
+    - I have been arrested and not allowed back to work. Is this allowed?
+
+- intent: arrestedQuery
+  examples: |
+    - What can I do?
+    - Is there any way around this?
+    - How do I get this solved?
+
+- intent: workingHours
+  examples: |
+    - working hours
+    - what is the working hours?
+    - What are the standard working hours?
+    - standard working hours
+
+- intent: workingHoursShiftWork
+  examples: |
+    - is shift work permitted
+    - is there shift work
+
+- intent: workingHoursNightWorks
+  examples: |
+    - What is night work?
+    - how many hours is night work?
+
+- intent: workingHourNightShiftWorker
+  examples: |
+    - do i can more money working in a night shit
+    - does night shift workers get pay more than normal shift
+    - do i can get pay more working at night
+    - is my wages higher if i work at night?
+
+- intent: leaves
+  examples: |
+    - leave
+    - leaves
+    - work leave
+
+- intent: sick_leave
+  examples: |
+    - sick leave
+    - how many sick leave do i have?
+
+- intent: maternity_leave
+  examples: |
+    - maternity leave
+    - when can i take my maternity leave?
+
+- intent: paternity_leave
+  examples: |
+    - paternity leave
+    - when can i take my paternity leave?
+
+- intent: vacation_leave
+  examples: |
+    - vacation leave
+    - how many vacation leave do i have?
+
+- intent: compensation
+  examples: |
+    - compensation
+    - do i get compensation
+    - will i get compensation?
+
+- intent: HealthInsuranceBenefits
+  examples: |
+    - Health Insurance Benefits
+    - do i get Health Insurance Benefits
+    - is there Health Insurance Benefits

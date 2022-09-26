@@ -1,0 +1,314 @@
+version: "3.0"
+
+stories:
+
+- story: bot name path 1
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: name
+  - action: utter_name
+  - intent: TORUL
+  - action: utter_TORUL
+  - intent: thanks
+  - action: utter_thanks
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot name path 2
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: name
+  - action: utter_name
+  - intent: TORUL
+  - action: utter_TORUL
+  - intent: thanks
+  - action: utter_thanks
+
+- story: thanks path
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+  - action: utter_anyOtherQuestion
+  - intent: affirm
+  - action: utter_tellMe
+
+- story: thanks path 2
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+  - action: utter_anyOtherQuestion
+  - intent: deny
+  - action: utter_iHereToHelp
+
+- story: toxic_language path
+  steps:
+  - intent: toxic_language
+  - action: pause_conversation
+
+- story: employmentLawDef path 1
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: employmentLawDef
+  - action: utter_employmentLawDef
+  - intent: thanks
+  - action: utter_thanks 
+
+- story: employmentContract path 1
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: employmentContract
+  - action: utter_employmentContract
+  - intent: thanks
+  - action: utter_thanks 
+
+- story: expressTerms path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: expressTerms
+  - action: utter_expressTerms
+  
+- story: statementOfParticulars path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: statementOfParticulars
+  - action: utter_statementOfParticulars
+
+- story: statementOfParticularsSending path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: statementOfParticularsSending
+  - action: utter_statementOfParticularsSending
+
+- story: Employer path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: Employer
+  - action: utter_Employer
+  
+- story: Employee path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: Employee
+  - action: utter_Employee
+  - intent: thanks
+  - action: utter_thanks
+
+- story: contractAgreement path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: contractAgreement
+  - action: utter_contractAgreement
+
+- story: lengthOfContract path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: lengthOfContract
+  - action: utter_lengthOfContract
+
+- story: shortTermContract path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: shortTermContract
+  - action: utter_shortTermContract
+
+- story: renumerationExampleNoPayment path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: renumerationExampleNoPayment
+  - action: utter_renumerationExampleNoPayment
+  
+- story: renumerationExampleNoPaymentWeekly path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: renumerationExampleNoPaymentWeeklyContract
+  - action: utter_renumerationExampleNoPaymentWeeklyContract
+
+- story: renumerationExampleNoPaymentMonthlyContract path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: renumerationExampleNoPaymentMonthlyContract
+  - action: utter_renumerationExampleNoPaymentMonthlyContract
+
+- story: renumerationExampleNoPaymentDailyContract path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: renumerationExampleNoPaymentDailyContract
+  - action: utter_renumerationExampleNoPaymentDailyContract
+
+- story: renumerationExampleNoPaymentNoLabourOffice path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: renumerationExampleNoPaymentNoLabourOffice
+  - action: utter_renumerationExampleNoPaymentNoLabourOffice
+
+- story: terminationContractDefinition path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: terminationContractDefinition
+  - action: utter_terminationContractDefinition
+
+- story: terminationContractHowEmployer path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: terminationContractHowEmployer
+  - action: utter_terminationContractHowEmployer
+
+- story: terminationContractHowEmployee path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: terminationContractHowEmployee
+  - action: utter_terminationContractHowEmployee
+
+- story: terminationContractProcedure path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: terminationContractProcedure
+  - action: utter_terminationContractProcedure
+
+- story: lengthOfNotice path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: lengthOfNotice
+  - action: utter_lengthOfNotice
+
+- story: reasonsForDismissal path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: reasonsForDismissal
+  - action: utter_reasonsForDismissal
+
+- story: employeeDismissalRights path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: employeeDismissalRights
+  - action: utter_employeeDismissalRights
+
+- story: misconduct path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: misconduct
+  - action: utter_misconduct
+
+- story: misconductBreachOfTrust path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: misconductBreachOfTrust
+  - action: utter_misconductBreachOfTrust
+
+- story: misconductDishonestBehaviours path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: misconductDishonestBehaviours
+  - action: utter_misconductDishonestBehaviours
+
+- story: misconductLateness path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: misconductLateness
+  - action: utter_misconductLateness
+
+- story: misconductViolence path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: misconductViolence
+  - action: utter_misconductViolence
+
+- story: arrested path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: arrested
+  - action: utter_arrested
+  - intent: arrestedQuery
+  - action: utter_arrestedQuery
+
+- story: arrestedQuery path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: arrestedQuery
+  - action: utter_arrestedQuery
+
+- story: workingHours path
+  steps:
+  - intent: workingHours
+  - action: utter_workingHours
+
+- story: workingHoursShiftWork path
+  steps:
+  - intent: workingHoursShiftWork
+  - action: utter_workingHoursShiftWork
+
+- story: workingHoursNightWorks path
+  steps:
+  - intent: workingHoursNightWorks
+  - action: utter_workingHoursNightWorks
+
+- story: workingHourNightShiftWorker path
+  steps:
+  - intent: workingHourNightShiftWorker
+  - action: utter_workingHourNightShiftWorker
+
+- story: leaves path
+  steps:
+  - intent: leaves
+  - action: utter_leaves
+
+- story: sick_leave path
+  steps:
+  - intent: sick_leave
+  - action: utter_sick_leave
+
+- story: maternity_leave path
+  steps:
+  - intent: maternity_leave
+  - action: utter_maternity_leave
+
+- story: paternity leave path
+  steps:
+  - intent: paternity_leave
+  - action: utter_paternity_leave
+
+- story: vacation_leave path
+  steps:
+  - intent: vacation_leave
+  - action: utter_vacation_leave
+
+- story: compensation path
+  steps:
+  - intent: compensation
+  - action: utter_compensation
+
+- story: HealthInsuranceBenefits path
+  steps:
+  - intent: HealthInsuranceBenefits
+  - action: utter_HealthInsuranceBenefits

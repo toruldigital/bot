@@ -1,0 +1,26 @@
+version: "3.0"
+
+rules:
+
+- rule: welcome user
+  conversation_start: true
+  steps:
+    - intent: greeting
+    - action: utter_greeting
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: name
+  - action: utter_name
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+  - action: action_tag_docs_search
+  - action: action_mail
